@@ -1,0 +1,3 @@
+include ':Functions'
+include ':app'
+rootProject.name = "LearnosetFunctions"
