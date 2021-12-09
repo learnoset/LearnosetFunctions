@@ -11,6 +11,8 @@ import org.json.JSONException;
 
 public class LearnosetStrings {
 
+    private static SuccessListener successListener = null;
+
     // Memory
     private static String USER_ID_TXT = "";
     private static String PASSWORD_TXT = "";
@@ -144,6 +146,12 @@ public class LearnosetStrings {
     private static String EARNINGS = "";
     private static String DEVELOP = "";
     private static String DEVELOPMENT = "";
+
+    public static void init(Context context, String fileURL, SuccessListener successListener) {
+        LearnosetStrings.successListener = successListener;
+
+        init(context, fileURL);
+    }
 
     public static void init(Context context, String fileURL) {
 
@@ -416,6 +424,10 @@ public class LearnosetStrings {
                         } else if (i == 129) {
                             DEVELOPMENT = jsonArray.getString(i);
                         }
+                    }
+
+                    if (LearnosetStrings.successListener != null) {
+                        LearnosetStrings.successListener.success();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
