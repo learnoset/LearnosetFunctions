@@ -146,6 +146,24 @@ public class LearnosetStrings {
     private static String EARNINGS = "";
     private static String DEVELOP = "";
     private static String DEVELOPMENT = "";
+    private static String INSTAGRAM = "";
+    private static String WHATSAPP = "";
+    private static String GMAIL = "";
+    private static String FACEBOOK = "";
+    private static String LEARNOSSET = "";
+    private static String TWITTER = "";
+    private static String SNAPCHAT = "";
+    private static String RUNNING = "";
+    private static String REGISTER = "";
+    private static String SEARCH = "";
+    private static String SEARCHING = "";
+    private static String DATABASE = "";
+    private static String CODE = "";
+    private static String ICON = "";
+    private static String ICONS = "";
+    private static String DOWNLOAD = "";
+    private static String NOTIFICATION = "";
+    private static String NOTIFICATIONS = "";
 
     public static void init(Context context, String fileURL, SuccessListener successListener) {
         LearnosetStrings.successListener = successListener;
