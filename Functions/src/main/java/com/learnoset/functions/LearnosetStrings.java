@@ -49,6 +49,9 @@ public class LearnosetStrings {
     private static String PERMISSIONS_DENIED = "";
     private static String PERMISSIONS_ACCESS = "";
     // Others
+    private static String COLOR = "";
+    private static String COLORS = "";
+    private static String DATABASE = "";
     private static String PLEASE = "";
     private static String OPEN = "";
     private static String CLOSE = "";
@@ -149,14 +152,13 @@ public class LearnosetStrings {
     private static String WHATSAPP = "";
     private static String GMAIL = "";
     private static String FACEBOOK = "";
-    private static String LEARNOSSET = "";
+    private static String LEARNOSET = "";
     private static String TWITTER = "";
     private static String SNAPCHAT = "";
     private static String RUNNING = "";
     private static String REGISTER = "";
     private static String SEARCH = "";
     private static String SEARCHING = "";
-    private static String DATABASE = "";
     private static String CODE = "";
     private static String ICON = "";
     private static String ICONS = "";
@@ -513,7 +515,7 @@ public class LearnosetStrings {
             } else if (i == 133) {
                 FACEBOOK = jsonArray.getString(i);
             } else if (i == 134) {
-                LEARNOSSET = jsonArray.getString(i);
+                LEARNOSET = jsonArray.getString(i);
             } else if (i == 135) {
                 TWITTER = jsonArray.getString(i);
             } else if (i == 136) {
