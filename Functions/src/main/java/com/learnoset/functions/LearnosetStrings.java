@@ -562,11 +562,11 @@ public class LearnosetStrings {
         String[] allWords = rawStringWithUnderScore.split("_");
         String formattedStr = "";
 
-        for (int i = 0; i < allWords.length; i++) {
+        for (String allWord : allWords) {
             if (formattedStr.isEmpty()) {
-                formattedStr = firstLetterCapital(allWords[i]);
+                formattedStr = firstLetterCapital(allWord);
             } else {
-                formattedStr = " " + firstLetterCapital(allWords[i]);
+                formattedStr = " " + firstLetterCapital(allWord);
             }
         }
         return formattedStr;
